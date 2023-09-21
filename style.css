@@ -1,0 +1,141 @@
+@font-face{
+    font-family:packStyle;
+    src:url("./crackman/Crackman.otf");
+}
+@font-face {
+    font-family: roboto;
+    src: url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+}
+@font-face {
+    font-family: robotoTwo;
+    src: url("./Roboto/Roboto-Regular.ttf");
+    src: url("./Roboto/Roboto-Bold.ttf");
+    font-weight: bold;
+    
+}
+
+*, *:before, *:after{
+    margin:0;
+    padding:0;
+    font: inherit;
+    font-family: roboto, sans-serif;
+}
+body{
+    min-height: 100vh;
+    background-color: #202020;
+}
+
+img, video{
+    display:block;
+    max-width: 100%;
+}
+.brodText a{
+    color:white
+
+}
+
+.fetStil, h3{
+    font-family: robotoTwo;
+}
+/*Stil för layout*/
+.introHem{
+    margin-top: 15vw;
+    max-width: 60vw;
+    margin-inline: auto;
+    background-color: #252525;
+    color:white;
+    padding: 2em;
+}
+@media (min-width:965px){
+    #teaserHem{
+        background-color: #375379;
+        color:white;
+        padding:3em;
+        margin:0
+    }
+    .introHem{
+        border-radius: 3px;
+        max-width: 80vw;
+        padding:0;
+    }
+    img{
+        margin:2em;
+        max-width: 50%;
+    }
+    .textOchBild{
+        display:flex;
+    }
+    .brodText{
+        padding:2em;
+    }
+    .bildSamling{
+        display:grid;
+        grid-column:auto;
+        background-color: #304a6e;
+        border-radius: 3px;
+        padding: 2em;
+    }
+    #formTitel{
+        background-color: white;
+        color: #171717;
+        border-top-left-radius: 3px;
+        border-top-right-radius: 3px;
+    }
+    .fonsterBild:hover{
+        transform: scale(1.5);
+        transition: 1s;
+
+    }
+}
+
+.introHem h3{
+    text-align: center;
+    padding: 1em;
+}
+img{
+    border-radius: 3px;
+    box-shadow:  10px 10px black;
+
+}
+header{
+    top:0;
+    position:fixed;
+    min-width: 100vw;
+}
+
+header, footer{
+    min-height: 15vh;
+    background-color: #375379;
+    color:white;
+    
+}
+h1{
+    font-size: 3em;
+}
+header h1, header h2, footer p{
+    
+    text-align: center;
+    margin:auto;
+    padding:2px;
+    font-family: packStyle;
+}
+h2{
+    font-size: 2em;
+}
+nav ul{
+    display:flex;
+    justify-content: center;
+    
+
+    
+}
+nav{
+    background-color: #304a6e;
+}
+ul li,
+li a {
+    list-style-type: none;
+    color:white;
+    padding:3px;
+    text-decoration: none;
+}

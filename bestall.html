@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Fönsterputsning</title>
 </head>
 <body>
@@ -16,8 +17,42 @@
             </ul>
         </nav>
     </header>
-    <h3>Fyll i de som liknar era fönster mest</h3>
-    <p>När ni har skickat in formuläret kommer vi kontakta er. <a href=vadIngar.html><b>Vad ingår i vår fönsterputs?</b></a></p>
-
+    
+    <section class="introHem">
+        <h3 id="formTitel">Pris och beställ</h3>
+        <div class="textOchBild">
+            <p class="brodText">När ni har skickat in
+                 formuläret kommer vi kontakta er. 
+                 <a href=vadIngar.html><b>Vad ingår i vår fönsterputs?</b></a>
+        <br>
+        <br>
+            Ni anger hur många fönster ni har,
+             om det finns spröjs och hur många 
+             sidor per fönster som ska putsas. 
+             Resten fixar vi! 
+             <a href=vadIngar.html><b>Vad räknas som ett fönster?</b></a>
+             <form>
+                <label for="numbFonster">Antal fönster:</label><br>
+                <input type="number" id="numbFonster" name="numbFonster"><br>
+                <label for="srojs">Spröjs? Ja:</label>
+                <input type="checkbox" id="sprojs" name="sprojs"><br>
+                <label for="oppningsbara">Ska vi öppna och putsa i mellan? Ja:</label>
+                <input type="checkbox" id="oppningsbara" name="oppningsbara"><br>
+                <label for="postNummer">Postnummer:</label><br>
+                <input type="number" id="postNummer" name="postNummer"><br>
+                <input type="submit" value="Räkna ut priset">
+             </form>       
+        
+            </p>
+        <div class="bildSamling">
+            <p>Exempel på fönstertyper:</p>
+            <img src="/images/window_single.png" alt="ett fönster med slät yta, utan spröjs eller lister." class="fonsterBild">
+            <img src="./images/window_double.png" alt="ett fönster med en avdelare, två-i-ett." class="fonsterBild">
+            <img src="./images/window_six.png" alt="ett fönster med spröjs" class="fonsterBild">
+        
+        </div>
+        
+    </div>
+    <footer><p class="fetStil">Vi ses :)</p></footer>
 </body>
 </html>
