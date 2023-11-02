@@ -2,10 +2,7 @@
     font-family:packStyle;
     src:url("./crackman/Crackman.otf");
 }
-@font-face {
-    font-family: roboto;
-    src: url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-}
+
 @font-face {
     font-family: robotoTwo;
     src: url("./Roboto/Roboto-Regular.ttf");
@@ -22,12 +19,15 @@
 }
 body{
     min-height: 100vh;
-    background-color: #202020;
+    background-color: #000000;
 }
 
+.imgWrapp{
+    padding: 1em
+}
 img, video{
     display:block;
-    max-width: 100%;
+    object-fit: cover;
 }
 .brodText a{
     color:white
@@ -42,42 +42,64 @@ img, video{
     margin-top: 15vw;
     max-width: 60vw;
     margin-inline: auto;
-    background-color: #252525;
+    background-color: #000000;
     color:white;
     padding: 2em;
 }
-@media (min-width:965px){
+ .introHem{
+    border: 2px solid white;
+    box-shadow:10px 10px 5px rgb(106, 245, 255),
+     0px 0px 0px 0px rgb(255, 255, 255),
+      0px 0px 5px 0px rgb(149, 234, 255),
+       0px 0px 5px 10px rgb(105, 225, 255)
+}
+
+/*Start större skärm*/
+@media (min-width:1200px){
     #teaserHem{
-        background-color: #375379;
+        background-color: #1c4649;
         color:white;
         padding:3em;
-        margin:0
+        margin:0;
     }
+
     .introHem{
         border-radius: 3px;
-        max-width: 80vw;
+        max-width: 60vw;
         padding:0;
+        margin-bottom: 16vh;
     }
     img{
-        margin:2em;
-        max-width: 50%;
+        
+        overflow: hidden; 
+        
+
     }
     .textOchBild{
-        display:flex;
+        display:grid;
+        grid-template-columns: 1fr 1fr;
     }
+.forklarandeTextRuta{
+    border-radius: 3px;;
+    background-color: white;
+    color: #395275;
+    opacity: 0;
+}
+
+
     .brodText{
         padding:2em;
     }
     .bildSamling{
         display:grid;
         grid-column:auto;
-        background-color: #304a6e;
+        background-color: #3691a1;
         border-radius: 3px;
         padding: 2em;
     }
     #formTitel{
         background-color: white;
-        color: #171717;
+        color: #000000;
         border-top-left-radius: 3px;
         border-top-right-radius: 3px;
     }
@@ -86,15 +108,21 @@ img, video{
         transition: 1s;
 
     }
+    .imgWrapp{
+        justify-content: center;
+        display: flex;
+       overflow: hidden;
+       align-items: center;
+    }
 }
-
+/*Slut större skärm*/
 .introHem h3{
     text-align: center;
     padding: 1em;
 }
 img{
     border-radius: 3px;
-    box-shadow:  10px 10px black;
+    
 
 }
 header{
@@ -105,7 +133,7 @@ header{
 
 header, footer{
     min-height: 15vh;
-    background-color: #375379;
+    background-color: #289bbe;
     color:white;
     
 }
@@ -125,12 +153,12 @@ h2{
 nav ul{
     display:flex;
     justify-content: center;
-    
-
+    box-shadow: 0px 6px 10px -1px rgb(145, 239, 255);
+    border-bottom: 1px solid white;
     
 }
 nav{
-    background-color: #304a6e;
+    background-color: #2baac0;
 }
 ul li,
 li a {
@@ -138,4 +166,9 @@ li a {
     color:white;
     padding:3px;
     text-decoration: none;
+}
+#formularIn{
+    display: grid;
+    justify-content: space-between;
+    padding: 1em;
 }

@@ -31,7 +31,7 @@
              sidor per fönster som ska putsas. 
              Resten fixar vi! 
              <a href=vadIngar.html><b>Vad räknas som ett fönster?</b></a>
-             <form>
+             <form id="formularIn">
                 <label for="numbFonster">Antal fönster:</label><br>
                 <input type="number" id="numbFonster" name="numbFonster"><br>
                 <label for="srojs">Spröjs? Ja:</label>
@@ -42,17 +42,23 @@
                 <input type="number" id="postNummer" name="postNummer"><br>
                 <input type="submit" value="Räkna ut priset">
              </form>       
-        
             </p>
-        <div class="bildSamling">
+            <div id="forklarandeTextRuta">
+                
+                    <!--Här ska en kommentar komma -->
+                
+            </div>
             <p>Exempel på fönstertyper:</p>
-            <img src="/images/window_single.png" alt="ett fönster med slät yta, utan spröjs eller lister." class="fonsterBild">
-            <img src="./images/window_double.png" alt="ett fönster med en avdelare, två-i-ett." class="fonsterBild">
-            <img src="./images/window_six.png" alt="ett fönster med spröjs" class="fonsterBild">
+        <div class="bildSamling">
+            <img src="./images/window_single.png" alt="ett fönster med slät yta, utan spröjs eller lister." class="fonsterBild" id="fonsterBild1">
+            <img src="./images/window_double.png" alt="ett fönster med en avdelare, två-i-ett." class="fonsterBild" id="fonsterBild2">
+            <img src="./images/window_six.png" alt="ett fönster med spröjs" class="fonsterBild" id="fonsterBild3">
         
         </div>
         
-    </div>
+        </div>
+        </section>
     <footer><p class="fetStil">Vi ses :)</p></footer>
+    <script src="bastallScript.js"></script>
 </body>
 </html>
